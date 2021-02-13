@@ -1,0 +1,30 @@
+=============== Feb 13, 2021 (PKT) ===============
+22:23:37.689982 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:23:37.715048 db@open opening
+22:23:37.719046 version@stat F·[] S·0B[] Sc·[]
+22:23:37.738741 db@janitor F·2 G·0
+22:23:37.738741 db@open done T·23.6928ms
+22:23:37.764733 db@close closing
+22:23:37.773728 db@close done T·8.9947ms
+=============== Feb 13, 2021 (PKT) ===============
+22:26:35.222012 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:26:35.223012 version@stat F·[] S·0B[] Sc·[]
+22:26:35.223012 db@open opening
+22:26:35.223012 journal@recovery F·1
+22:26:35.230010 journal@recovery recovering @1
+22:26:35.254028 memdb@flush created L0@2 N·15 S·1023B "6+d..\x9f\xdbj,v3":"\xfbQ\xc3..\xfc\xdd\xc5,v4"
+22:26:35.262025 version@stat F·[1] S·1023B[1023B] Sc·[0.25]
+22:26:35.322992 db@janitor F·3 G·0
+22:26:35.322992 db@open done T·99.9798ms
+22:35:35.785398 db@close closing
+22:35:35.827370 db@close done T·41.9718ms
+=============== Feb 13, 2021 (PKT) ===============
+22:38:07.208208 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:38:07.211208 version@stat F·[1] S·1023B[1023B] Sc·[0.25]
+22:38:07.211208 db@open opening
+22:38:07.212206 journal@recovery F·1
+22:38:07.219202 journal@recovery recovering @3
+22:38:07.241189 memdb@flush created L0@5 N·30 S·1KiB "Dat..ion,v17":"r\x00\x00..^\xd5\x00,v42"
+22:38:07.253181 version@stat F·[2] S·2KiB[2KiB] Sc·[0.50]
+22:38:07.315257 db@janitor F·4 G·0
+22:38:07.315257 db@open done T·104.0494ms
