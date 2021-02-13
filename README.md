@@ -1,16 +1,16 @@
 # Blockchain
 
-# Running a Proof of Authority Blockchain
+## Running a Proof of Authority Blockchain
 
 The Proof of Authority (PoA) algorithm is typically used for private blockchain networks as it requires pre-approval of, or voting in of, the account addresses that can approve transactions (seal blocks).  
 
-1. Because the accounts must be approved, we will generate two new nodes with new account addresses that will serve as our pre-approved sealer addresses.
+## Because the accounts must be approved, we will generate two new nodes with new account addresses that will serve as our pre-approved sealer addresses.
 
 Create accounts for two nodes for the network with a separate `datadir` for each using `geth`.
 - ./geth --datadir node1 account new
 - ./geth --datadir node2 account new
 
-2. Next, generate your genesis block.
+## Next, generate your genesis block.
 
 - Run `puppeth`, name your network, and select the option to configure a new genesis block.
 
@@ -26,22 +26,22 @@ Create accounts for two nodes for the network with a separate `datadir` for each
 
 - Export genesis configurations. This will fail to create two of the files, but you only need `networkname.json`.
 
-3. With the genesis block creation completed, we will now initialize the nodes with the genesis' json file.
+## With the genesis block creation completed, we will now initialize the nodes with the genesis' json file.
 
     * Using `geth`, initialize each node with the new `networkname.json`.
         * ./geth --datadir node1 init networkname.json
         * ./geth --datadir node2 init networkname.json
 
-4. Now the nodes can be used to begin mining blocks.
+## Now the nodes can be used to begin mining blocks.
 
     * Run the nodes in separate terminal windows with the commands:
         *  ./geth --datadir node1 --unlock "SEALER_ONE_ADDRESS" --mine --rpc --allow-insecure-unlock
         *  ./geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --mine --port 30304 --bootnodes "enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
     * **NOTE:** Type your password and hit enter - even if you can't see it visually!
 
-5. Your private PoA blockchain should now be running!
+## Your private PoA blockchain should now be running!
 
-6. With both nodes up and running, the blockchain can be added to MyCrypto for testing.
+## With both nodes up and running, the blockchain can be added to MyCrypto for testing.
 
     * Open the MyCrypto app, then click `Change Network` at the bottom left:
 
@@ -57,7 +57,7 @@ Create accounts for two nodes for the network with a separate `datadir` for each
 
     * Finally, click `Save & Use Custom Node`. 
 
-7. After connecting to the custom network in MyCrypto, it can be tested by sending money between accounts.
+## After connecting to the custom network in MyCrypto, it can be tested by sending money between accounts.
 
     * Select the `View & Send` option from the left menu pane, then click `Keystore file`.
 
