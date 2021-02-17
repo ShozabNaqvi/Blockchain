@@ -1,4 +1,4 @@
-#Case Study Propsal: Pegasus
+# Case Study Propsal: Pegasus
 
 ## What is it?
 PegasusFintech Inc. Toronto based entity got established in 2017. The sole reason for the establishment of this entity had been to provide support to small start ups and emerging companies who may lack funds.
